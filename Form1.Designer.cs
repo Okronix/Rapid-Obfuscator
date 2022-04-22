@@ -38,7 +38,6 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.groupBoxPath = new System.Windows.Forms.GroupBox();
             this.labelFileIn = new System.Windows.Forms.Label();
-            this.btnOpenFileIn = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -142,7 +141,6 @@
             // 
             this.groupBoxPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(80)))), ((int)(((byte)(85)))));
             this.groupBoxPath.Controls.Add(this.labelFileIn);
-            this.groupBoxPath.Controls.Add(this.btnOpenFileIn);
             this.groupBoxPath.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
             this.groupBoxPath.Location = new System.Drawing.Point(12, 14);
@@ -161,27 +159,6 @@
             this.labelFileIn.Size = new System.Drawing.Size(13, 17);
             this.labelFileIn.TabIndex = 4;
             this.labelFileIn.Text = "-";
-            // 
-            // btnOpenFileIn
-            // 
-            this.btnOpenFileIn.AllowDrop = true;
-            this.btnOpenFileIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(80)))), ((int)(((byte)(85)))));
-            this.btnOpenFileIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnOpenFileIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenFileIn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(228)))), ((int)(((byte)(229)))));
-            this.btnOpenFileIn.FlatAppearance.BorderSize = 0;
-            this.btnOpenFileIn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
-            this.btnOpenFileIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnOpenFileIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnOpenFileIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOpenFileIn.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenFileIn.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnOpenFileIn.Location = new System.Drawing.Point(329, 36);
-            this.btnOpenFileIn.Name = "btnOpenFileIn";
-            this.btnOpenFileIn.Size = new System.Drawing.Size(25, 25);
-            this.btnOpenFileIn.TabIndex = 1;
-            this.btnOpenFileIn.UseVisualStyleBackColor = false;
-            this.btnOpenFileIn.Click += new System.EventHandler(this.btnOpenFileIn_Click);
             // 
             // saveFileDialog1
             // 
@@ -281,7 +258,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnOpenFileIn;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.GroupBox groupBoxParametrs;

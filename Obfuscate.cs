@@ -39,9 +39,9 @@ namespace Rapid_Obfuscator
                             {
                                 varNameRep += letters[rand.Next(0, letters.Length - 1)];
                             }
-                            string fileData = File.ReadAllText(tempPath, Encoding.Default);
-                            fileData = fileData.Replace(varName, varNameRep);
-                            File.WriteAllText(tempPath, fileData, Encoding.Default);
+                            //string fileData = File.ReadAllText(tempPath, Encoding.Default);
+                            //fileData = fileData.Replace(varName, varNameRep);
+                            //File.WriteAllText(tempPath, fileData, Encoding.Default);
                         }
                     }
                 }
