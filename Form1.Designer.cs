@@ -34,12 +34,13 @@
             this.groupBoxParametrs = new System.Windows.Forms.GroupBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.linkCheckAll = new System.Windows.Forms.LinkLabel();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.groupBoxPath = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.labelFileIn = new System.Windows.Forms.Label();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkHelp = new System.Windows.Forms.LinkLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureDragInfo = new System.Windows.Forms.PictureBox();
@@ -63,7 +64,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(10, 21);
+            this.checkBox1.Location = new System.Drawing.Point(10, 34);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(234, 21);
             this.checkBox1.TabIndex = 3;
@@ -75,7 +76,6 @@
             this.groupBoxParametrs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(80)))), ((int)(((byte)(85)))));
             this.groupBoxParametrs.Controls.Add(this.checkBox4);
             this.groupBoxParametrs.Controls.Add(this.linkCheckAll);
-            this.groupBoxParametrs.Controls.Add(this.checkBox2);
             this.groupBoxParametrs.Controls.Add(this.checkBox3);
             this.groupBoxParametrs.Controls.Add(this.checkBox1);
             this.groupBoxParametrs.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -92,7 +92,7 @@
             this.checkBox4.AutoSize = true;
             this.checkBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(10, 102);
+            this.checkBox4.Location = new System.Drawing.Point(10, 88);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(148, 21);
             this.checkBox4.TabIndex = 7;
@@ -105,7 +105,7 @@
             this.linkCheckAll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.linkCheckAll.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.linkCheckAll.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(144)))), ((int)(((byte)(192)))));
-            this.linkCheckAll.Location = new System.Drawing.Point(6, 136);
+            this.linkCheckAll.Location = new System.Drawing.Point(7, 136);
             this.linkCheckAll.Name = "linkCheckAll";
             this.linkCheckAll.Size = new System.Drawing.Size(80, 17);
             this.linkCheckAll.TabIndex = 6;
@@ -113,24 +113,12 @@
             this.linkCheckAll.Text = "Выбрать все";
             this.linkCheckAll.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkCheckAll_LinkClicked);
             // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox2.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(10, 48);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(240, 21);
-            this.checkBox2.TabIndex = 5;
-            this.checkBox2.Text = "Шифровать данные переменных";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox3.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(10, 75);
+            this.checkBox3.Location = new System.Drawing.Point(10, 61);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(174, 21);
             this.checkBox3.TabIndex = 4;
@@ -140,6 +128,7 @@
             // groupBoxPath
             // 
             this.groupBoxPath.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(80)))), ((int)(((byte)(85)))));
+            this.groupBoxPath.Controls.Add(this.linkLabel1);
             this.groupBoxPath.Controls.Add(this.labelFileIn);
             this.groupBoxPath.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(245)))));
@@ -148,13 +137,27 @@
             this.groupBoxPath.Size = new System.Drawing.Size(361, 86);
             this.groupBoxPath.TabIndex = 5;
             this.groupBoxPath.TabStop = false;
-            this.groupBoxPath.Text = "Пути файлов";
+            this.groupBoxPath.Text = "Файл";
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(144)))), ((int)(((byte)(192)))));
+            this.linkLabel1.Location = new System.Drawing.Point(7, 59);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(93, 17);
+            this.linkLabel1.TabIndex = 8;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Редактировать";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // labelFileIn
             // 
             this.labelFileIn.AutoSize = true;
             this.labelFileIn.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFileIn.Location = new System.Drawing.Point(7, 21);
+            this.labelFileIn.Location = new System.Drawing.Point(7, 30);
             this.labelFileIn.Name = "labelFileIn";
             this.labelFileIn.Size = new System.Drawing.Size(13, 17);
             this.labelFileIn.TabIndex = 4;
@@ -170,6 +173,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(80)))), ((int)(((byte)(87)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.linkHelp);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.groupBoxPath);
             this.panel1.Controls.Add(this.groupBoxParametrs);
@@ -178,12 +182,26 @@
             this.panel1.Size = new System.Drawing.Size(388, 343);
             this.panel1.TabIndex = 7;
             // 
+            // linkHelp
+            // 
+            this.linkHelp.AutoSize = true;
+            this.linkHelp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkHelp.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.linkHelp.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(144)))), ((int)(((byte)(192)))));
+            this.linkHelp.Location = new System.Drawing.Point(316, 275);
+            this.linkHelp.Name = "linkHelp";
+            this.linkHelp.Size = new System.Drawing.Size(57, 17);
+            this.linkHelp.TabIndex = 9;
+            this.linkHelp.TabStop = true;
+            this.linkHelp.Text = "Справка";
+            this.linkHelp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkHelp_LinkClicked);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Rapid_Obfuscator.Properties.Resources.btn;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 275);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 275);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 51);
             this.pictureBox1.TabIndex = 8;
@@ -235,7 +253,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(68)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(660, 339);
+            this.ClientSize = new System.Drawing.Size(660, 328);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Cursor = System.Windows.Forms.Cursors.Default;
@@ -250,6 +268,7 @@
             this.groupBoxPath.ResumeLayout(false);
             this.groupBoxPath.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureDragInfo)).EndInit();
@@ -265,7 +284,6 @@
         private System.Windows.Forms.Label labelFileIn;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.LinkLabel linkCheckAll;
-        private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -273,6 +291,8 @@
         private System.Windows.Forms.Label labelDragInfo;
         private System.Windows.Forms.PictureBox pictureDragInfo;
         private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.LinkLabel linkHelp;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
